@@ -1,7 +1,7 @@
 # Projekt nr 3 – Przetwarzanie sygnałów z pybind11
 
-# Grupa Adrian Protasiuk i Kajetan Rajczyk, ACiR 3B, grupa nr 7
-- Indeksy kolejno: 203374 i 203627
+## Grupa Adrian Protasiuk i Kajetan Rajczyk, ACiR 3B, grupa nr 7
+## Indeksy kolejno: 203374 i 203627
 
 # Ten projekt to biblioteka C++ do przetwarzania sygnałów, udostępniona jako moduł Pythona za pomocą pybind11.
 
