@@ -44,4 +44,8 @@ def test_compute_energy():
     assert isinstance(energy, float)
     assert math.isclose(energy, 14.0, rel_tol=1e-6)
 
+def test_plot_signal():
+    import scikit_build_example as sbe
+    sbe.plot_signal([0.0, 1.0, 0.0, -1.0], title="Test Plot")
+
 

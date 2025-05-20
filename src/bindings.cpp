@@ -8,6 +8,7 @@
 #include "generator.hpp"
 #include "peak_detection.hpp"
 #include "energy.hpp"
+#include "visualization.hpp"
 
 namespace py = pybind11;
 
@@ -40,5 +41,8 @@ PYBIND11_MODULE(scikit_build_example, m) {
 	m.def("compute_energy", &compute_energy,
 	"Compute the energy of a signal",
 	py::arg("signal"));
+
+	m.def("plot_signal", &plot_signal, "Plot a 1D signal",
+	  py::arg("signal"), py::arg("title") = "Signal");
 
 }
