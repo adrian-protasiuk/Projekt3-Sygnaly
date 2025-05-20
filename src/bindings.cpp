@@ -13,9 +13,7 @@
 namespace py = pybind11;
 
 PYBIND11_MODULE(scikit_build_example, m) {
-	m.doc() = "Signal processing module";
-
-	m.def("hello", []() { return "Hello from C++!"; });
+	m.doc() = "Signal processing module - grupa 7";
 
 	m.def("low_pass_filter_1d", &low_pass_filter_1d, "Simple 1D low-pass filter", py::arg("signal"), py::arg("window_size"));
 	m.def("remove_high_frequencies", &remove_high_frequencies, "Remove high frequencies", py::arg("signal"), py::arg("threshold_ratio"));

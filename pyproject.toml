@@ -3,7 +3,7 @@ requires = ["scikit-build-core>=0.10", "pybind11"]
 build-backend = "scikit_build_core.build"
 
 [project]
-name = "scikit_build_example"  # Taka sama nazwa jak w PYBIND11_MODULE!
+name = "scikit_build_example"
 version = "0.0.1"
 
 [tool.mypy]
@@ -33,7 +33,7 @@ testpaths = ["tests"]
 test-command = "pytest {project}/tests"
 test-extras = ["test"]
 test-skip = ["*universal2:arm64"]
-# Setuptools bug causes collision between pypy and cpython artifacts
+
 before-build = "rm -rf {project}/build"
 
 [tool.ruff]
@@ -41,9 +41,9 @@ target-version = "py37"
 
 [tool.ruff.lint]
 extend-select = [
-  "B",    # flake8-bugbear
-  "I",    # isort
-  "PGH",  # pygrep-hooks
-  "RUF",  # Ruff-specific
-  "UP",   # pyupgrade
+  "B",
+  "I",
+  "PGH",
+  "RUF",
+  "UP",
 ]

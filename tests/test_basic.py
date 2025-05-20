@@ -2,19 +2,12 @@ import math
 import cmath
 import scikit_build_example
 
-
-def test_hello():
-    assert scikit_build_example.hello() == "Hello from C++!"
-
-
 def test_generate_sine_length_and_values():
     result = scikit_build_example.generate_sine(5, 1.0, 10.0)
     assert isinstance(result, list)
     assert len(result) == 5
     assert all(isinstance(x, float) for x in result)
     assert math.isclose(result[0], 0.0, abs_tol=1e-6)
-    # Nie sprawdzamy ostatniego punktu — może nie być zerem, zależy od częstotliwości
-
 
 def test_dft_and_idft_inverse():
     signal = [0.0, 1.0, 0.0, -1.0]
