@@ -1,8 +1,9 @@
 # Projekt nr 3 – Przetwarzanie sygnałów z pybind11
-# Grupa Adrian i Kajetan, ACiR 3B, grupa nr 7
-# Indeksy kolejno: 203374 i 203627
 
-Ten projekt to biblioteka C++ do przetwarzania sygnałów, udostępniona jako moduł Pythona za pomocą pybind11.
+# Grupa Adrian Protasiuk i Kajetan Rajczyk, ACiR 3B, grupa nr 7
+- Indeksy kolejno: 203374 i 203627
+
+# Ten projekt to biblioteka C++ do przetwarzania sygnałów, udostępniona jako moduł Pythona za pomocą pybind11.
 
 ## Funkcjonalności podstawowe:
 - Wizualizacja sygnału z wykorzystaniem biblioteki matplotplusplus 
@@ -27,3 +28,10 @@ Ten projekt to biblioteka C++ do przetwarzania sygnałów, udostępniona jako mo
 
 ## Uruchomienie wcześniej przygotowanych testów po instalacji i budowie projektu:
 - pytest -v -s tests
+
+## Struktura Projektu:
+- Pliki potrzebne do zbudowania modułu to przede wszystkim CmakeLists.txt, pyproject.toml i src/bindings.cpp
+- W folderze /src znajdują się wszystki pliki .cpp oraz .hpp zawierające cały kod c++
+- W głównym katalogu jest także folder raport, w którym znajduje się plik oddanie_projektu.ipynb z dokładnym opisem wszystkich funkcjonalności
+- Widoczne są także foldery pybind11 i matplotplusplus będące bibliotekami niezbędnymi do kolejno: stworzenia pythonowego modułu oraz wizualizacji sygnałów
+- Oprócz nich istnieje folder tests z jednym tylko plikiem test_basic.py zawierającym proste testy związane z funkcjonalnością projektu

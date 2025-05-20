@@ -1,9 +1,0 @@
-Polecenie:
-Projekt polega na zbudowaniu biblioteki w c++ do przetwarzania sygnałów. Biblioteka ma być udostępniona jako moduł pythonowy przy użyciu biblioteki pybind11.
-
-Funkcjonalności do zaimplementowania:
-1. Wizualizacja sygnału z wykorzystaniem biblioteki matplotplusplus
-2. DFT i transformata odwrotna
-3. Filtracja 1D i 2D
-4. Generowanie sygnałów o zadanej częstotliwości (sin, cos, prostokątny, piłokształtny)
-5. Usuwanie wysokich częstotliwości z sygnału (korzystajac z DFT)
